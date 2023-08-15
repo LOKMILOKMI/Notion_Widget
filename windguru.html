@@ -1,50 +1,23 @@
-<html>
+<!DOCTYPE html>
+<html lang="pt">
 <head>
-<title></title>
-<meta name="Robots" content="index,nofollow" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="refresh" content="900">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://www.windguru.net/css/prod/fcst_widget.f89366fa536f9ccc.css" type="text/css">
-<style type="text/css">
-    /* ios safari shit fix */
-    #main {
-        width: 1px; 
-        min-width: 100%;
-    }
- 
-
-</style> 
-<script src="https://www.windguru.net/js/prod/libs-wgwidget.1693e2f4e9b60b1b.js"></script>
-<script type="module" src="https://www.windguru.net/js/dist/176/main-wgwidget.js"></script>
-<script type="module">
-
-WG.lang = {"legend":{"SMER":"Direc\u00e7\u00e3o do vento","TMP":"Temperatura","WINDSPD":"Velocidade","MWINDSPD":"Vento corrig.","APCP":"Precipita\u00e7\u00e3o (mm\/3h)","TCDC":"Nebulosidade (%)","HTSGW":"Ondula\u00e7\u00e3o","WAVESMER":"Direc\u00e7\u00e3o da vaga","RATING":"Classifica\u00e7\u00e3o Windguru","PERPW":"Periodo da vaga (s)","APCP1":"Precipita\u00e7\u00e3o (mm\/1h)","GUST":"Rajadas","SLP":"<span class=\"helpinfhpa\">*Press\u00e3o (hPa)<\/span>","RH":"Humidade (%)","FLHGT":"<span class=\"helpinffl\">*isot\u00e9rmica 0\u00ba (m)<\/span>","CDC":"Nebulosidade (%)<br\/>alta \/ m\u00e9dia \/ baixa","TMPE":"<span class=\"helpinftmp\">*Temperatura <\/span>","WCHILL":"Wind chill (sensa\u00e7\u00e3o de frio)","APCPs":"<span class=\"helpinfsnow\">*Precip. (mm\/3h)<\/span>","APCP1s":"<span class=\"helpinfsnow\">*Precip. (mm\/1h)<\/span>","WVHGT":"Ondas de vento","WVPER":"Ondas de vento por.(s)","WVDIR":"Dir. da onda de vento","SWELL1":"Ondula\u00e7\u00e3o","SWPER1":"Per\u00edodo da ondula\u00e7\u00e3o (s)","SWDIR1":"Direc\u00e7\u00e3o da ondula\u00e7\u00e3o","SWELL2":"2.Ondula\u00e7\u00e3o","SWPER2":"2.Per\u00edodo da ondula\u00e7\u00e3o (s)","SWDIR2":"2.Dir. da ondula\u00e7\u00e3o","DIRPW":"Direc\u00e7\u00e3o da vaga","WAVEDIR":"Direc\u00e7\u00e3o da vaga","MIX":" ","TIDE":"Mar\u00e9"},"tooltip":{"TMPE":"A temperatura a 2 metros do solo \u00e9 ajustada \u00e0 altitude real do local. Mais informa\u00e7\u00e3o na sec\u00e7\u00e3o Ajuda\/FAQ.","SLP":"Press\u00e3o ao n\u00edvel do mar em hPa, os valores acima de 1000 hPa est\u00e3o expressos com a nota\u00e7\u00e3o <b>x-1000<\/b>","FLHGT":"Altura do n\u00edvel de congelamento expressa em metros","sst":"Temperatura da superf\u00edcie do mar baseada em dados de sat\u00e9lite. V\u00e1lida para oceanos e grandes lagos, mais informa\u00e7\u00e3o em Ajuda\/FAQ.","APCP1s":"Precipita\u00e7\u00e3o em mil\u00edmetros. Os valores a azul carregado indicam queda de neve.","APCPs":"Precipita\u00e7\u00e3o em mil\u00edmetros. Os valores a azul carregado indicam queda de neve."},"dir":["N","NNE","NE","ENE","E","ESE","SE","SSE","S","SSW","SW","WSW","W","WNW","NW","NNW"],"weekday":["Dom","Seg","Ter","Qua","Qui","Sex","S\u00e1b"],"txt":{"archive":"Arquivo","tides":"Mar\u00e9s","detail":"Detalhe \/ Mapa","link":"Atalho","timezone":"Fuso hor\u00e1rio","help":"Ajuda","options":"Op\u00e7\u00f5es","choose_m":"Escolha a modifica\u00e7\u00e3o do vento","loading":"A carregar previs\u00e3o...","delayed":"Previs\u00e3o com um atraso de 12 horas. As previs\u00f5es WRF mais recentes s\u00f3 est\u00e3o dispon\u00edveis para os assinantes Windguru PRO. <a href='help_index.php?sec=pro'>Clique para mais informa\u00e7\u00f5es<\/a>","delayed_short":"Previs\u00e3o com um atraso de 12 horas. As previs\u00f5es WRF mais recentes s\u00f3 est\u00e3o dispon\u00edveis para os assinantes Windguru PRO.","custom_onlypro":"Esta previs\u00e3o s\u00f3 est\u00e1 dispon\u00edvel para utilizadores do Windguru PRO","lastupdated":"\u00daltima actualiza\u00e7\u00e3o","nextexpected":"Previs\u00e3o da pr\u00f3xima actualiza\u00e7\u00e3o","timeleft":"Tempo restante"},"tab":{"forecast":"Previs\u00e3o","graph":"<img src=\"\/images\/gricon.png\" width=\"15\" height=\"10\"\/>","2d":"2D","2d_t":"Temperatura (0 ... 5000 m)","2d_w":"Vento (0 ... 5000 m)","2d_t_l":"Temperatura (alt ... +2000 m)","2d_w_l":"Vento (alt ... +2000 m)","map":"Mapa","webcams":"Webcams","reports":"Relat\u00f3rios de vento","accommodation":"Onde ficar","schools":"Escolas\/Aluguer","shops":"Lojas","other":"Outros","directory":"Links","fcst_graph":"<img src=\"\/img\/gricon.png\"\/>","more":"<span class=\"butt-txt\">Mais<\/span>","statistic":"Estat\u00edsticas","archive":"Arquivo","alert":"Adicionar alerta","share_widget":"Adicionar ao meu Website"},"units":{"kmh":"km\/h","mph":"mi\/h","ms":"m\/s","msd":"m\/s","knots":"n\u00f3s","bft":"Bft","c":"&deg;C","f":"&deg;F","m":"m","ft":"ft","arr":"&rarr;","num":"deg&deg;"},"maps":{"windspd":"Vento","gust":"Rajadas","gustuv":"Rajadas","t2m":"Temperatura","press":"Press\u00e3o","tcdca":"Pluviosidade \/ nuvens","tcdc_apcp3":"Pluviosidade \/ nuvens","tcdca1":"Pluviosidade \/ nuvens","tcdca1_nopress":"Pluviosidade \/ nuvens","cdc_apcp3":"Pluviosidade \/ nuvens","cdca":"Pluviosidade \/ nuvens","cdca1":"Pluviosidade \/ nuvens","cdca1_nopress":"Pluviosidade \/ nuvens","wave":"Vaga","waveen":"Energia da vaga","swell1":"Ondula\u00e7\u00e3o","swell2":"2. Ondula\u00e7\u00e3o","swell1en":"Energia da ondula\u00e7\u00e3o","swell2en":"2. Energia da ondula\u00e7\u00e3o","wvhgt":"Vaga (vento)","wven":"Energia da vaga (vento)"},"mapsi":{"windspd":"wind","gust":"wind","gustuv":"wind","t2m":"temperature","press":"pressure","tcdc_apcp3":"precipitation","tcdc_apcp1":"precipitation","tcdca":"precipitation","tcdca1":"precipitation","tcdca1_nopress":"precipitation","cdca":"precipitation","cdca1":"precipitation","cdca1_nopress":"precipitation","wave":"wave","waveen":"wave","swell1":"wave","swell2":"wave","swell1en":"wave","swell2en":"wave","wvhgt":"wave","wven":"wave"},"langdir":{"dir":"pt"}};
-Config.cdn = 'https://www.windguru.net';
-Config.forecast_api = 'https://www.windguru.net/int/iapi.php';
-</script>
-<script>
-var wjson = {"tabs":[{"share":true,"id_spot":270,"id_model":100,"id_model_arr":[{"id_model":3,"initstr":"2023081418","rundef":"2023081418x0x240x0x240-2023081412x243x384x249x384","period":6,"cachefix":"-24x-46.26x0"},{"id_model":68,"initstr":"2023081418","rundef":"2023081418x15x30x15x30-2023081406x51x66x51x66-2023081400x81x96x81x96-2023081400x105x120x105x120-2023081400x129x144x129x144","period":6,"cachefix":"-24x-46.26x0"},{"id_model":29,"initstr":"2023081418","rundef":"2023081418x0x78x0x78","period":6,"cachefix":"-24x-46.26x0"},{"id_model":45,"initstr":"2023081418","rundef":"2023081418x0x120x0x120-2023081412x0x180x129x180","period":6,"cachefix":"-24x-46.26x0"},{"id_model":59,"initstr":"2023081412","rundef":"2023081412x0x240x0x240","period":12,"cachefix":"-24x-46.26x0"},{"id_model":83,"initstr":"2023081418","rundef":"2023081418x0x240x0x240-2023081412x243x384x249x384","period":6,"cachefix":"-24.222x-46.17x0"}],"blend":{"id_blend_settings":1,"id_user":169,"name":"WINDGURU DEFAULT","lat":null,"lon":null,"range":null,"res_sensitivity":0.5,"init_sensitivity":0.5,"model_koef":{"3":1,"4":1,"14":1,"21":1,"22":1,"23":1,"24":1,"29":1,"32":1,"33":1,"34":1,"36":1,"37":1,"38":1,"39":1,"40":1,"42":1,"43":0.7,"44":1,"45":0.7,"48":1,"49":1,"50":1,"51":1,"52":1,"53":0,"54":1,"55":1,"56":1,"57":1,"59":0.7,"90":1,"98":1,"101":1,"91":1,"92":1,"95":1,"93":1,"94":1,"96":1,"99":1,"63":1,"70":1,"64":1,"74":1,"75":1,"71":1,"69":1,"62":1,"72":1,"68":1,"87":1,"89":1},"mix_range":{"WINDSPD":22.2,"TMPE":28.8,"TMP":28.8,"TCDC":100,"CDC":100,"APCP1":1.4,"GUST":34.6,"FLHGT":4709,"SLP":43.5,"HCDC":100,"MCDC":100,"LCDC":100,"RH":57.2},"mix_skip":["APCP1","WINDDIR"]},"model_period":0,"options":{"wj":"knots","tj":"c","waj":"m","tij":null,"odh":0,"doh":"24","fhours":"72","limit1":10.673855,"limit2":15.525606,"limit3":19.407007,"tlimit":10,"vt":"forecast","wrapnew":null,"show_flhgt_opt":4,"map_open_fn":"WG.openFcstMap","params":["WINDSPD","GUST","SMER","HTSGW","PERPW","DIRPW","TMPE","CDC","APCP1s"],"hrstep_min":2,"model_bar_blend":false},"id_model_wave":83}],"spots":{"270":{"id_spot":"270","id_user":"169","spotname":"Guaruja (Sao Paulo)","country":"Brazil","id_country":76,"lat":-24,"lon":-46.26,"alt":0,"tz":"America\/Sao_Paulo","tzid":"America\/Sao_Paulo","gmt_hour_offset":-3,"sunrise":"06:33","sunset":"17:45","sst":21,"models":[100,3,83,68,29,45,59,47,60],"tide":{"2N2":[1.82,-137.69],"EPS2":[0.5,-165.45],"J1":[1.01,-159.02],"K1":[6.66,-176.71],"K2":[6.44,167.67],"L2":[0.93,157.7],"LA2":[0.39,72.51],"M2":[34.97,167.73],"M3":[1.11,-54.87],"M4":[2.26,141.27],"M6":[0.3,96.2],"M8":[0.04,-42.93],"MF":[0.81,-27.28],"MKS2":[0.21,-149.68],"MM":[0.26,26.62],"MN4":[9.71,137.85],"MS4":[9.52,-54.55],"MSF":[0.18,144.78],"MSQM":[0.02,1.84],"MTM":[0.18,-12.16],"MU2":[1.81,-158.73],"N2":[4.52,-133.62],"N4":[0.77,134.92],"NU2":[0.7,-131.06],"O1":[10.89,121.53],"P1":[1.89,171.61],"Q1":[2.98,98.11],"R2":[0.22,174.91],"S1":[1.25,152.67],"S2":[23.13,176.58],"S4":[0.46,-76.88],"SA":[0.02,-96.47],"SSA":[0.32,7.57],"T2":[1.7,176.48]},"tides":"2"}},"fcst":[{"id_spot":270,"id_model":100,"initstr":"1970010100","rundef":"","cachefix":"-24x-46.26x0"},{"id_spot":"270","id_model":83,"initstr":"2023081418","rundef":"2023081418x0x240x0x240-2023081412x243x384x249x384","cachefix":"-24x-46.26x0"}]};
-$(function(){
-    var wgw = new Widget({id_spot: 270});
-    wgw._jsIframe(wjson);
-}); 
-</script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windguru Widget</title>
 </head>
 <body>
-<div id="main"> 
-<div id="widget-wrap">
-    <a href="https://www.windguru.cz/270" target="_top"><div class="widget-spot-header">Brazil - Guaruja (Sao Paulo), WG / GFS-Wave 25 km<div class="widget-powered">Powered by Windguru</div></div></a>
-    <div id="widget-content" style="clear: both"></div>
-</div>
-</div>
-<div id="minimap" class=""></div>    
-<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
-<symbol id="ico_right" viewBox="0 0 16 16">
-<g><g><polygon points="4,15 12,8 4,1"/></g></g>
-</symbol>
-</svg>
-
+  <!-- Coloque o script fornecido aqui -->
+  <script id="wg_fwdg_270_100_1692066951825">
+    (function (window, document) {
+      var loader = function () {
+        var arg = ["s=270", "m=100", "mw=83", "uid=wg_fwdg_270_100_1692066951825", "wj=knots", "tj=c", "waj=m", "odh=0", "doh=24", "fhours=72", "hrsm=2", "vt=forecasts", "lng=pt", "idbs=1", "p=WINDSPD,GUST,SMER,HTSGW,PERPW,DIRPW,TMPE,CDC,APCP1s"];
+        var script = document.createElement("script");
+        var tag = document.getElementsByTagName("script")[0];
+        script.src = "https://www.windguru.cz/js/widget.php?" + arg.join("&");
+        tag.parentNode.insertBefore(script, tag);
+      };
+      window.addEventListener ? window.addEventListener("load", loader, false) : window.attachEvent("onload", loader);
+    })(window, document);
+  </script>
 </body>
 </html>
